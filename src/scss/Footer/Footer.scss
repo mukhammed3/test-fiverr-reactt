@@ -1,0 +1,66 @@
+@import "../General/Variables.scss";
+
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color: #212121;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  &__item {
+    & > p {
+      background: -webkit-linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(207, 207, 207, 1) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: $font;
+      font-size: 23px;
+    }
+    & > h3 {
+      color: #ed364a;
+      font-family: $font;
+      font-size: 34px;
+    }
+  }
+
+  & > svg:nth-child(1) {
+    margin-left: 20px;
+  }
+}
+
+//media
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .footer {
+    height: 100%;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+  .footer-section__item {
+    margin-top: 35px;
+  }
+  .footer-section__item > h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .footer {
+    height: 100%;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+  .footer-section__item {
+    margin-top: 35px;
+  }
+  .footer-section__item > h3 {
+    font-size: 30px;
+  }
+}

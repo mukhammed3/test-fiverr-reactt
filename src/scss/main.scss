@@ -1,0 +1,14 @@
+//General styles
+@use "./General/Basic.scss";
+
+//Variables
+@use "./General/Variables.scss";
+
+//Navbar
+@use "./NavBar.scss";
+
+//Home
+@use "./Home/Home.scss";
+
+//Footer
+@use "./Footer/Footer.scss";
